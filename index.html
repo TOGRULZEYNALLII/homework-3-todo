@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Todo App</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="background-image">
+            <div class="container">
+                <div class="main-inner">
+                    <div class="head">
+                        <h1 class="title">TODO</h1>
+                        <button id="theme-button">
+                            <img id="theme-img" src="/images/icon-moon.svg" />
+                        </button>
+                    </div>
+
+                    <form id="myForm">
+                        <input name="checkbox" id="checkbox" type="checkbox" />
+                        <input id="myInput" type="text" placeholder="Create a new todo...">
+                    </form>
+
+                    <div id="todo-container">
+                        <div id="todo-inner">
+                            <div id="todo-left" class="todo-left">
+                              
+                            </div>
+                            <div id="todo-right" class="todo-right">
+                           
+                            </div>
+                        </div>
+
+                        <div class="todo-buttons">
+                            <small class="unchecked"> <span id="unchecked-items">0</span> items left</small>
+                            <button class="btn" id="all">All</button>
+                            <button class="btn" id="active">Active</button>
+                            <button class="btn" id="completed">Completed</button>
+                            <button class="btn" id="deleteAll">Clear Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/jj.js"></script>
+</body>
+
+</html>

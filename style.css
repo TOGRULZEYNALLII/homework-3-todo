@@ -1,0 +1,188 @@
+:root {
+    --background-img: url('../images/bg-desktop-light.jpg');
+    --background-color: #F2F2F2;
+    --white-color: #FFFFFF;
+    --border-color: #E3E4F1;
+    --text-color-first: #9495A5;
+    --text-color-second:#494C6B;
+    --input-color:#393A4B;
+    --list-background: #ffffff;
+    --box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+    --btn-focus:#3A7CFD;
+    --btn-active:#494C6B;
+}
+html[data-theme='dark'] {
+    --background-img: url('../images/bg-desktop-dark.jpg');
+    --background-color: #25273D;
+    --white-color: #FFFFFF;
+    --border-color: #393A4B;
+    --text-color-first: #767992;
+    --text-color-second:#C8CBE7;
+    --input-color:#C8CBE7;
+    --list-background: #25273D;
+    --box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
+    --btn-focus:#3A7CFD;
+    --btn-active:#E3E4F1;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    margin-left: 450px;
+    margin-right: 450px;
+}
+.background-image {
+    background-image: var(--background-img);
+    background-repeat: no-repeat;
+}
+.title {
+    font-family: 'Josefin Sans';
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 15px;
+    color: var(--white-color);
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+#theme-button {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+}
+#theme-img {
+    cursor: pointer;
+}
+.main {
+    background-color: var(--background-color);
+}
+.main-inner {
+    width: 100%;
+    height: 100vh;
+}
+#myForm {
+    margin-top: 40px;
+}
+#checkbox {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    margin: 20px 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+#myInput {
+    position: relative;
+    width: 100%;
+    height: 65px;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -0.25px;
+    color: var(--input-color);
+    padding: 23px 0 23px 72px;
+    box-shadow:var(--box-shadow);
+    border-radius: 5px;
+    border: none;
+    z-index: 1;
+    background-color: var(--list-background);
+}
+#todo-container {
+    background-color: var(--white-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    margin-top: 24px;
+    background-color: var(--list-background);
+}
+#todo-inner{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px var(--border-color) solid;
+}
+
+#todo-left {
+    padding: 20px 24px;    
+}
+#todo-right{
+margin: 20px 24px;
+}
+.delete-one{
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-size: smaller;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    margin: 10px 0 10px 0;
+    margin-bottom: 30px;
+}
+.todo-text {
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -0.25px;
+    color: var(--text-color-second);
+    margin-left: 24px;
+    /*padding: 21px 0 20px 24px; */
+}
+/* .todo-cb {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+} */
+.myCheckboxCls{
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.btn {
+    background-color: transparent;
+    border: none;
+    color: var(--text-color-first);
+    cursor: pointer;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    font-family: 'Josefin Sans';
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.194444px;
+}
+.btn:focus{
+    color: var(--btn-focus);
+    transition: 0.7s;
+}
+.btn:active{
+    color: var(--btn-active);
+}
+.unchecked{
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.194444px;
+    color:var(--text-color-first);
+    margin: 16px 40px 20px 24px;
+}
+#all,
+#active,
+#completed{
+    font-weight: 700;
+}
+#active,
+#completed{
+    margin-left: 20px;
+}
+#deleteAll{
+font-weight: 400px;
+margin-left: 25px;
+/* margin:0 24px 0 20px; */
+}
